@@ -16,20 +16,23 @@ namespace OOMod1SelfAssessment.Tests
 
         public void testInit()
         {
-            testStudent1 = new Student("Robert", "Hinds");
-            testStudent2 = new Student("Blah", "Blah");
+           // testStudent1 = new Student("Robert", "Hinds");
+          //  testStudent2 = new Student("Blah", "Blah");
         }
 
         [TestCleanup]
         public void testClean()
         {
-            testStudent1 = null;
-            testStudent2 = null;
+           // testStudent1 = null;
+           // testStudent2 = null;
         }
 
         [TestMethod()]
         public void StudentCountTestPass()
         {
+            Student.StudentCount = 0;
+            testStudent1 = new Student("Robert", "Hinds");
+            testStudent2 = new Student("Blah", "Blah");
             Assert.AreEqual(2, Student.StudentCount);
         }
     }
