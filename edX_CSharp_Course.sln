@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mod3_Lab1", "Mod3_Lab1\ConsoleApp1\Mod3_Lab1.csproj", "{235C8B36-F7F7-45C4-9079-A65AB9C820C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mod3_Lab2", "Mod3_Lab2\Mod3_Lab2.csproj", "{02191526-C750-4FB5-91FE-9E11E6ACCCE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mod3_assessment_lab", "Mod3_assessment_lab\Mod3_assessment_lab.csproj", "{AE15ADD5-9AFC-4049-849E-5B197EE5DF42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOMod1", "OOMod1\OOMod1\OOMod1.csproj", "{AE348830-37BF-4052-8442-248A8AA597FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOMod1SelfAssessment", "OOMod1SelfAssessment\OOMod1SelfAssessment\OOMod1SelfAssessment.csproj", "{1950071C-C5A2-4273-966C-D81115C250D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOMod1SelfAssessmentTests", "OOMod1SelfAssessmentTests\OOMod1SelfAssessmentTests\OOMod1SelfAssessmentTests.csproj", "{E1F2F5FA-C87A-4F25-92AB-47C2B13945B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{235C8B36-F7F7-45C4-9079-A65AB9C820C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235C8B36-F7F7-45C4-9079-A65AB9C820C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235C8B36-F7F7-45C4-9079-A65AB9C820C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235C8B36-F7F7-45C4-9079-A65AB9C820C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02191526-C750-4FB5-91FE-9E11E6ACCCE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02191526-C750-4FB5-91FE-9E11E6ACCCE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02191526-C750-4FB5-91FE-9E11E6ACCCE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02191526-C750-4FB5-91FE-9E11E6ACCCE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE15ADD5-9AFC-4049-849E-5B197EE5DF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE15ADD5-9AFC-4049-849E-5B197EE5DF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE15ADD5-9AFC-4049-849E-5B197EE5DF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE15ADD5-9AFC-4049-849E-5B197EE5DF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE348830-37BF-4052-8442-248A8AA597FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE348830-37BF-4052-8442-248A8AA597FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE348830-37BF-4052-8442-248A8AA597FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE348830-37BF-4052-8442-248A8AA597FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1950071C-C5A2-4273-966C-D81115C250D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1950071C-C5A2-4273-966C-D81115C250D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1950071C-C5A2-4273-966C-D81115C250D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1950071C-C5A2-4273-966C-D81115C250D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F2F5FA-C87A-4F25-92AB-47C2B13945B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F2F5FA-C87A-4F25-92AB-47C2B13945B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F2F5FA-C87A-4F25-92AB-47C2B13945B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F2F5FA-C87A-4F25-92AB-47C2B13945B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B873019-33D2-41D4-BAEA-FE49D0173EB7}
+	EndGlobalSection
+EndGlobal
