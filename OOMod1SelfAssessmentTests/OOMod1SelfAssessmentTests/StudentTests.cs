@@ -28,7 +28,7 @@ namespace OOMod1SelfAssessment.Tests
         }
 
         [TestMethod()]
-        public void StudentCountTestPass()
+        public void StudentCount_SeeIfCounterIncrements_EqualReturnValue()
         {
             Student.StudentCount = 0;
             testStudent1 = new Student("Robert", "Hinds");

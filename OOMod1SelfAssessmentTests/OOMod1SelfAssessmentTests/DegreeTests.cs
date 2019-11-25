@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace OOMod1SelfAssessment.Tests
 {
     [TestClass()]
-    public class CoursesTests
+    public class DegreeTests
     {
         private Course testCourse1;
 
@@ -26,17 +26,17 @@ namespace OOMod1SelfAssessment.Tests
         }
 
         [TestMethod()]
-        public void AddCourseTestCheckIfCorrectClassWasAddedPass()
+        public void AddCourse_CheckIfCorrectClassWasAdded_ReturnValueEqualsOne()
         {
-            Courses coursesList = new Courses("MATH");
+            Degree coursesList = new Degree("MATH");
             coursesList.AddCourse(testCourse1);
             Assert.AreEqual(1, coursesList.CourseCount());
         }
 
         [TestMethod()]
-        public void AddCourseTestCheckIfAddedCourseCanBeFoundPass()
+        public void AddCourse_CheckIfAddedCourseCanBeFound_CourseCanBeFoundByNameIsTrue()
         {
-            Courses coursesList = new Courses("MATH");
+            Degree coursesList = new Degree("MATH");
             coursesList.AddCourse(testCourse1);
             Assert.IsTrue(coursesList.CheckForCourseByName("Math 101"));
         }

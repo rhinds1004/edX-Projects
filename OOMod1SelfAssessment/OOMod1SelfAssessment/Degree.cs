@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace OOMod1SelfAssessment
 {
-    public class Courses
+    public class Degree
     {
         public List<Course> CoursesList { get; set; } = new List<Course>();
-        public string CoursesName { get; set; }
+        public string DegreeName { get; set; }
       
 
-        public Courses(string CoursesName)
+        public Degree(string degreeName)
         {
-            this.CoursesName = CoursesName;
+            this.DegreeName = degreeName;
         }
 
        public void AddCourse(Course course)

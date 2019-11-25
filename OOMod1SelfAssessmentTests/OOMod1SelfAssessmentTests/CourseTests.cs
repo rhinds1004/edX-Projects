@@ -26,18 +26,10 @@ namespace OOMod1SelfAssessment.Tests
             testStudent1 = null;
             testStudent2 = null;
         }
-        [TestMethod()]
-        public void CourseTestCheckIfStudentCounterWorksPass()
-        {
-            Course testCourse = new Course("blah");
-            testCourse.AddStudent(testStudent1);
-            testCourse.AddStudent(testStudent2);
 
-            Assert.AreEqual(2, testCourse.StudentCount());
-        }
 
         [TestMethod()]
-        public void EqualsTestMakesSureTwoCoursesWithSameNameAreEqualIsTrue()
+        public void Equals_MakesSureTwoCoursesWithSameNameAreEqual_IsTrue()
         {
             Course testCourse = new Course("blah");
             Course testCourse2 = new Course("blah");
@@ -45,7 +37,7 @@ namespace OOMod1SelfAssessment.Tests
         }
 
         [TestMethod()]
-        public void EqualsTestMakesSureTwoCoursesWithDifferentNameAreNotEqualIsFalse()
+        public void Equals_MakesSureTwoCoursesWithDifferentNameAreNotEqual_IsFalse()
         {
             Course testCourse = new Course("blah");
             Course testCourse2 = new Course("Notblah");

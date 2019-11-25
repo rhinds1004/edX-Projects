@@ -11,7 +11,7 @@ namespace OOMod1SelfAssessment
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public static int StudentCount { get; set; } = 0;
-
+        
         public Student(string firstName, string lastName)
         {
             FirstName = firstName;
