@@ -43,7 +43,14 @@ namespace OOMod1SelfAssessment.Tests
             Course testCourse2 = new Course("Notblah");
             Assert.IsFalse(testCourse.Equals(testCourse2));
         }
-    
+
+        [TestMethod()]
+        public void AddTeacher_EnsureTeacherGetsAdded_ReturnValueEqualsOne()
+        {
+            Assert.Fail();
+        }
+
+
     }
 
 }
