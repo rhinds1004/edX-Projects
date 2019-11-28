@@ -9,6 +9,7 @@ namespace OOMod1SelfAssessment
     public class Course : ICourse, IEquatable<Course>
     {
         private List<Student> studentsInCourse = new List<Student>();
+        private List<Teacher> teachersOfCourse = new List<Teacher>();
 
         public Course(string courseName)
         {
@@ -18,6 +19,7 @@ namespace OOMod1SelfAssessment
         public string CourseName { get; set; }
       //  public List<Student> StudentsInCourse { get => studentsInCourse;}
 
+        
         public void AddStudent(Student newStudent)
         {
             studentsInCourse.Add(newStudent);
@@ -50,6 +52,24 @@ namespace OOMod1SelfAssessment
         public override string ToString()
         {
             return base.ToString();
+        }
+
+        public bool AddTeacher(Teacher newTeacher)
+        {
+            teachersOfCourse.Add(newTeacher);
+            return teachersOfCourse.Contains(newTeacher);
+        }
+
+        public bool IsCourseTeacher(string firstName, string lastName)
+        {
+            foreach(Teacher teacher in teachersOfCourse )
+            {
+               if(teacher.FirstName == firstName && teacher.LastName == lastName)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

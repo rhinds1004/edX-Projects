@@ -45,11 +45,52 @@ namespace OOMod1SelfAssessment.Tests
         }
 
         [TestMethod()]
-        public void AddTeacher_EnsureTeacherGetsAdded_ReturnValueEqualsOne()
+        public void Equals_CheckNullFails_ReturnIsFalse()
         {
-            Assert.Fail();
+            Course testCourse = new Course("blah");
+         
+            Assert.IsFalse(testCourse.Equals(null));
+           
         }
 
+        [TestMethod()]
+        public void AddTeacher_EnsureTeacherGetsAddedAsTeacherOfCourse_ReturnIsTrue()
+        {
+            Teacher testTeacher = new Teacher("Autumn", "Hinds");
+            Course testCourse = new Course("Therpy 101");
+
+            Assert.IsTrue(testCourse.AddTeacher(testTeacher));
+        }
+
+        [TestMethod()]
+        public void IsCourseTeacher_EnsureCourseTeacherIsTheOneExpected_ReturnIsTrue()
+        {
+            Teacher testTeacher = new Teacher("Autumn", "Hinds");
+            Course testCourse = new Course("Therpy 101");
+
+            testCourse.AddTeacher(testTeacher);
+            Assert.IsTrue(testCourse.IsCourseTeacher("Autumn", "Hinds"));
+        }
+
+        [TestMethod()]
+        public void IsCourseTeacher_CheckIfFirstNameIsNull_ReturnIsFalse()
+        {
+            Teacher testTeacher = new Teacher("Autumn", "Hinds");
+            Course testCourse = new Course("Therpy 101");
+
+            testCourse.AddTeacher(testTeacher);
+            Assert.IsFalse(testCourse.IsCourseTeacher(null, "Hinds"));
+        }
+
+        [TestMethod()]
+        public void IsCourseTeacher_CheckIfLastNameIsNull_ReturnIsFalse()
+        {
+            Teacher testTeacher = new Teacher("Autumn", "Hinds");
+            Course testCourse = new Course("Therpy 101");
+
+            testCourse.AddTeacher(testTeacher);
+            Assert.IsFalse(testCourse.IsCourseTeacher("Autumn", null));
+        }
 
     }
 
