@@ -17,9 +17,19 @@ namespace OOMod1SelfAssessment
         }
 
         public string CourseName { get; set; }
-      //  public List<Student> StudentsInCourse { get => studentsInCourse;}
+        //  public List<Student> StudentsInCourse { get => studentsInCourse;}
 
-        
+        public List<string> GetTeachersOfCourse()
+        {
+            List<string> teachersList = new List<string>();
+            foreach (Teacher teacher in teachersOfCourse)
+            {
+                teachersList.Add($"{teacher.FirstName} {teacher.LastName}");
+
+            }
+            return teachersList;
+        }
+
         public void AddStudent(Student newStudent)
         {
             studentsInCourse.Add(newStudent);

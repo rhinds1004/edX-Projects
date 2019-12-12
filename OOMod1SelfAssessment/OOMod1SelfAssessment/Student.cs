@@ -6,17 +6,23 @@ using System.Threading.Tasks;
 
 namespace OOMod1SelfAssessment
 {
-    public class Student : IPerson
+    public class Student : Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         public static int StudentCount { get; set; } = 0;
-        
+
         public Student(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
             StudentCount++;
         }
+
+        public List<Course> EnrolledCourses { get; set; } = new List<Course>();
+
+        public void AddEnrolledCourse(Course course)
+        {
+            EnrolledCourses.Add(course);
+        }
+
     }
 }

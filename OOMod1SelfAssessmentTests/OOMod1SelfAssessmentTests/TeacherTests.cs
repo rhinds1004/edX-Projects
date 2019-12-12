@@ -11,11 +11,6 @@ namespace OOMod1SelfAssessment.Tests
     [TestClass()]
     public class TeacherTests
     {
-        [TestMethod()]
-        public void TeacherTest()
-        {
-            Assert.Fail();
-        }
 
         [TestMethod()]
         public void Equals_MakesSureTwoTeachersWithSameNameAreEqual_IsTrue()
@@ -126,27 +121,11 @@ namespace OOMod1SelfAssessment.Tests
             Assert.IsTrue(testTeacher1 != testTeacher2);
         }
 
-
         [TestMethod()]
-        public void EqualsTest1()
+        public void GradeTestTest()
         {
-            Assert.Fail();
+            Teacher testTeacher1 = new Teacher("Jackson", "Hinds");
+            Assert.AreEqual(89.0f, testTeacher1.GradeTest("test1"));
         }
-
-        /*
-        [TestMethod()]
-        public void ToStringTest()
-        {
-            Assert.Fail();
-        }
-        */
-
-            /*
-        [TestMethod()]
-        public void GetHashCodeTest()
-        {
-            Assert.Fail();
-        }
-        */
     }
 }

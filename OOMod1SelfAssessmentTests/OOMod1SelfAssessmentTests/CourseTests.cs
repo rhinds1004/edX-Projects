@@ -92,6 +92,42 @@ namespace OOMod1SelfAssessment.Tests
             Assert.IsFalse(testCourse.IsCourseTeacher("Autumn", null));
         }
 
+        [TestMethod()]
+        public void GetTeachersOfCourse_Ensure2TeacherGetsAddedAsTeachersOfCourse_ReturnIsTrue()
+        {
+            Teacher testTeacher = new Teacher("Autumn", "Hinds");
+            Teacher testTeacher1 = new Teacher("Jackson", "Hinds");
+            Course testCourse = new Course("Therpy 101");
+
+            testCourse.AddTeacher(testTeacher);
+            testCourse.AddTeacher(testTeacher1);
+            Assert.AreEqual(2, testCourse.GetTeachersOfCourse().Count);
+        }
+
+        [TestMethod]
+        public void GetTeachersOfCourse_CheckIfTeacherFullNameIsReturnedAreEqual_ReturnIsTrue()
+        {
+            Teacher testTeacher = new Teacher("Autumn", "Hinds");
+            Teacher testTeacher1 = new Teacher("Jackson", "Hinds");
+            Course testCourse = new Course("Therpy 101");
+            testCourse.AddTeacher(testTeacher);
+            testCourse.AddTeacher(testTeacher1);
+            Assert.AreEqual("Autumn Hinds", testCourse.GetTeachersOfCourse()[0]);
+            Assert.AreEqual("Jackson Hinds", testCourse.GetTeachersOfCourse()[1]);
+        }
+
+        [TestMethod]
+        public void GetTeachersOfCourse_CheckIfTeacherFullNameReturnedIsOneStringWithSpaceBetweenFirstAndLastName_AreEqualIsTrue()
+        {
+            Teacher testTeacher = new Teacher("Autumn", "Hinds");
+
+            Course testCourse = new Course("Therpy 101");
+            testCourse.AddTeacher(testTeacher);
+
+            Assert.AreEqual("Autumn Hinds", testCourse.GetTeachersOfCourse()[0]);
+
+        }
+
     }
 
 }

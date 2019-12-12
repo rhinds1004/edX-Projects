@@ -20,7 +20,8 @@ namespace OOMod1SelfAssessment
 
             Course proCourse = new Course("Programming with C#");
 
-            Teacher teacher = new Teacher("No", "Name");
+            Teacher teacher = new Teacher("My Teacher", "Name");
+            Teacher teacher1 = new Teacher("New", "Name");
 
             proCourse.AddTeacher(teacher);
             proCourse.AddStudent(student1);
@@ -29,7 +30,7 @@ namespace OOMod1SelfAssessment
 
 
             Course advProCourse = new Course("Advanced Programming with C#");
-            advProCourse.AddTeacher(teacher);
+            advProCourse.AddTeacher(teacher1);
             advProCourse.AddStudent(student1);
             advProCourse.AddStudent(student2);
 
@@ -44,7 +45,7 @@ namespace OOMod1SelfAssessment
             Console.WriteLine($"Program: {IntTech.ProgramName}  Degree: {IntTech.Degree.DegreeName}");
             foreach(Course course in IntTech.Degree.CoursesList)
             {
-                Console.WriteLine($"Course: {course.CourseName}  student count: {course.StudentCount()}");
+                Console.WriteLine($"Course: {course.CourseName}  student count: {course.StudentCount()} Teacher: {string.Join(",", course.GetTeachersOfCourse().ToArray())}");
             }
             
                        
